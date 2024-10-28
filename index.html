@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <meta name="description" content="neuxserver" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <title class="ignore">Neuxserver</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://fonts.googleapis.com/css?family=Yellowtail%7COpen%20Sans%3A400%2C300%2C600%2C700%2C800"
+            media="screen"
+        />
+        <!-- Custom styles for this template -->
+        <link
+            href="css/font-awesome.min.css"
+            rel="stylesheet"
+            type="text/css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            href="css/flexslider.css"
+            type="text/css"
+            media="screen"
+        />
+        <link
+            rel="stylesheet"
+            href="css/jquery.bxslider.css"
+            type="text/css"
+            media="screen"
+        />
+        <link href="css/jquery.fancybox.css" rel="stylesheet" />
+        <link href="css/jquery.selectbox.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/mobile.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/settings.css"
+            media="screen"
+        />
+        <link href="css/animate.min.css" rel="stylesheet" />
+        <link href="css/ts.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs8HBjo7MfaxkIZophfl63DP_U0qxJOrE"
+        ></script>
+
+        <script
+            type="text/javascript"
+            src="js/jquery.themepunch.tools.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/jquery.themepunch.revolution.min.js"
+        ></script>
+
+        <!-- SLIDER REVOLUTION 5.0 EXTENSIONS
+            (Load Extensions only on Local File Systems !
+            The following part can be removed on Server for On Demand Loading) -->
+        <script
+            type="text/javascript"
+            src="js/extensions/revolution.extension.actions.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/extensions/revolution.extension.carousel.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/extensions/revolution.extension.kenburn.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/extensions/revolution.extension.layeranimation.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/extensions/revolution.extension.migration.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/extensions/revolution.extension.navigation.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/extensions/revolution.extension.parallax.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/extensions/revolution.extension.slideanims.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="js/extensions/revolution.extension.video.min.js"
+        ></script>
+
+        <!-- Twitter Feed Scripts
+     Uncomment to activate
+
+<script type="text/javascript" src="js/twitter/jquery.tweet.js"></script>
+<script type="text/javascript" src="js/twitter/twitter_feed.js"></script> -->
+    </head>
+    <body>
+        <!--Header Start-->
+        <header data-spy="affix" data-offset-top="1" class="clearfix">
+            <section class="toolbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 left_ba">
+                            <ul
+                                class="left-none navbar-nav top-nav"
+                                style="flex-direction: row"
+                            >
+                                <!-- <li>
+                                    <a href="#"
+                                        ><i class="fa fa-user"></i> Login</a
+                                    >
+                                </li> -->
+                                <li class="dropdown">
+                                    <a
+                                        href="#"
+                                        class="dropdown-toggle"
+                                        data-toggle="dropdown"
+                                        ><i class="fa fa-globe"></i> 多语言</a
+                                    >
+                                    <ul class="dropdown-menu ignore">
+                                        <li>
+                                            <a
+                                                href="javascript:translate.changeLanguage('chinese_simplified');"
+                                                >简体中文</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:translate.changeLanguage('english');"
+                                                >English</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:translate.changeLanguage('russian');"
+                                                >Русский</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="javascript:translate.changeLanguage('japanese');"
+                                                >日本語</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- <li>
+                                    <i class="fa fa-search"></i>
+                                    <input
+                                        type="search"
+                                        placeholder="Search"
+                                        class="search_box"
+                                    />
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="right-none pull-right company_info">
+                                <li>
+                                    <a href="tel:18005670123"
+                                        ><i class="fa fa-phone"></i> (+1)
+                                        9495249795</a
+                                    >
+                                </li>
+                                <!-- <li>
+                                    <a href="tel:18005670123"
+                                        ><i class="fa fa-email"></i>
+                                        molly@neuxserver.com</a
+                                    >
+                                </li> -->
+                                <li class="address">
+                                    <a href="contact.html"
+                                        ><i class="fa fa-map-marker"></i> 3350
+                                        Scott Blvd Bldg#6601 Santa Clara, CA
+                                        95054 USA</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar_shadow"></div>
+            </section>
+            <div class="bottom-header">
+                <div class="container">
+                    <nav
+                        class="navbar navbar-expand-md navbar-default"
+                        role="navigation"
+                    >
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#navbar-collapse-mobile"
+                                    aria-controls="navbar-collapse-mobile"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation"
+                                >
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <a class="navbar-brand ignore" href="index.html"
+                                    ><span class="logo"
+                                        ><span class="primary_text"
+                                            >neuxserver</span
+                                        >
+                                        <!-- <span class="secondary_text"
+                                            >Template</span
+                                        ></span> -->
+                                    </a
+                                >
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div
+                                class="desktop-menu-dropdown collapse navbar-collapse"
+                                id="navbar-collapse-desktop"
+                            >
+                                <ul class="nav navbar-nav pull-right">
+                                    <li class="active">
+                                        <a href="index.html">首页</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="inventory-2-listing-comparison.html"
+                                            >产品</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="portfolio-2-column-details.html"
+                                            >解决方案</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="service.html"
+                                            >合作伙伴</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html"
+                                            >关于 neuxserver</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="portfolio-single-project-wide.html">客户服务</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="ignore"
+                                            href="benchmarks.html"
+                                            >benchmark</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="mobile-menu-dropdown collapse navbar-collapse"
+                                id="navbar-collapse-mobile"
+                            >
+                            <ul class="nav navbar-nav pull-right">
+                                <li class="active">
+                                    <a href="index.html">首页</a>
+                                </li>
+                                <li>
+                                    <a
+                                    href="inventory-2-listing-comparison.html"
+                                        >产品</b
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                    href="portfolio-2-column-details.html"
+                                        >解决方案</b
+                                    ></a>
+                                </li>
+                                <li><a href="service.html">合作伙伴</a></li>
+                                <li>
+                                    <a href="faq.html">关于neuxserver</a>
+                                </li>
+                                <li>
+                                    <a
+                                    href="portfolio-single-project-wide.html"
+                                        >客户服务 </b
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="benchmarks.html"
+                                        >benchmark</a>
+                                </li>
+                            </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </div>
+                <div class="header_shadow"></div>
+            </div>
+        </header>
+        <!--Header End-->
+
+        <div class="clearfix"></div>
+        <section class="banner-wrap">
+            <div class="banner">
+                <div class="rev_slider_wrapper">
+                    <!-- START REVOLUTION SLIDER 5.0 auto mode -->
+                    <div id="rev_slider" class="rev_slider" data-version="5.0">
+                        <ul>
+                            <!-- SLIDE  -->
+                            <li data-transition="fade">
+                                <!-- MAIN IMAGE -->
+                                <img src="images/slide-show1.jpg" alt="" />
+
+                                <!-- LAYERS -->
+                                <div
+                                    class="tp-caption mediumlarge_light_white_center domainate start"
+                                    data-x="0"
+                                    data-hoffset="0"
+                                    data-y="244"
+                                    data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                    data-start="1000"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    data-speed="1000"
+                                    data-endspeed="300"
+                                    style="margin-top: 10px"
+                                >
+                                    算力革命
+                                </div>
+
+                                <!-- LAYER NR. 1 -->
+                                <div
+                                    class="tp-caption internet"
+                                    data-x="0"
+                                    data-y="322"
+                                    data-speed="500"
+                                    data-start="800"
+                                    data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    style="
+                                        z-index: 6;
+                                        letter-spacing: -3px;
+                                        margin-top: 10px;
+                                    "
+                                >
+                                    从Neuxserver开始
+                                </div>
+                            </li>
+
+                            <!-- SLIDE  -->
+                            <li data-transition="fade">
+                                <!-- MAIN IMAGE -->
+                                <img src="images/slide-show2.jpg" alt="" />
+
+                                <!-- LAYER NR. 1 -->
+                                <div
+                                    class="tp-caption move mediumlarge_light_white_center"
+                                    data-x="600"
+                                    data-y="230"
+                                    data-speed="500"
+                                    data-start="800"
+                                    data-transform_in="x:right;s:2000;e:Power4.easeInOut;"
+                                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    style="z-index: 6; letter-spacing: -3px"
+                                >
+                                    智算未来，驱动无限可能
+                                </div>
+                            </li>
+
+                            <!-- SLIDE  -->
+                            <li data-transition="fade">
+                                <!-- MAIN IMAGE -->
+                                <img src="images/slide-show3.jpg" alt="" />
+
+                                <!-- LAYER NR. 1 -->
+                                <div
+                                    class="tp-caption big_white fade"
+                                    data-x="40"
+                                    data-y="520"
+                                    data-speed="500"
+                                    data-start="800"
+                                    data-transform_in="y:bottom;s:2000;e:Power4.easeInOut;"
+                                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    style="z-index: 6"
+                                >
+                                    GPU服务器，开启智能时代
+                                </div>
+                            </li>
+
+                            <!-- SLIDE  -->
+                            <li data-transition="fade">
+                                <!-- MAIN IMAGE -->
+                                <img src="images/slide-show4.jpg" alt="" />
+
+                                <!-- LAYERS -->
+                                <div
+                                    class="tp-caption customin customout start big_white"
+                                    data-x="0"
+                                    data-hoffset="0"
+                                    data-y="244"
+                                    data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+                                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                    data-speed="1000"
+                                    data-start="500"
+                                    data-easing="Back.easeInOut"
+                                    data-endspeed="300"
+                                >
+                                    以算力为基石
+                                </div>
+
+                                <!-- LAYER NR. 1 -->
+                                <div
+                                    class="tp-caption thin_red fade"
+                                    data-x="450"
+                                    data-y="244"
+                                    data-speed="500"
+                                    data-start="800"
+                                    data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+                                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                    style="z-index: 6"
+                                >
+                                    构筑成功之路
+                                </div>
+                            </li>
+
+                            <!-- SLIDE  -->
+                            <li data-transition="fade">
+                                <!-- MAIN IMAGE -->
+                                <img src="images/slide-show5.jpg" alt="" />
+
+                                <!-- LAYERS -->
+                                <div
+                                    class="tp-caption mediumlarge_light_white_center domainate customin customout start"
+                                    data-x="0"
+                                    data-hoffset="0"
+                                    data-y="244"
+                                    data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                    data-speed="1000"
+                                    data-start="500"
+                                    data-easing="Back.easeInOut"
+                                    data-endspeed="300"
+                                >
+                                    高效运算
+                                </div>
+                                <!-- LAYERS -->
+                                <div
+                                    class="tp-caption mediumlarge_light_white_center domainate customin customout start"
+                                    data-x="200"
+                                    data-hoffset="0"
+                                    data-y="344"
+                                    data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                                    data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                                    data-speed="1000"
+                                    data-start="500"
+                                    data-easing="Back.easeInOut"
+                                    data-endspeed="300"
+                                >
+                                    成就卓越
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END REVOLUTION SLIDER -->
+                </div>
+                <!-- END REVOLUTION SLIDER WRAPPER -->
+
+                <script>
+                    /******************************************
+        -   PREPARE PLACEHOLDER FOR SLIDER  -
+        ******************************************/
+
+                    var revapi;
+                    jQuery(document).ready(function () {
+                        revapi = jQuery("#rev_slider").revolution({
+                            sliderType: "standard",
+                            sliderLayout: "fullwidth",
+                            delay: 9000,
+                            navigation: {
+                                arrows: { enable: true }
+                            },
+                            gridwidth: 1170,
+                            gridheight: 645
+                        });
+                    }); /*ready*/
+                </script>
+
+                <!-- END REVOLUTION SLIDER -->
+
+                <!-- Content End -->
+            </div>
+        </section>
+        <section class="message-wrap">
+            <div class="container">
+                <div class="row">
+                    <h2 class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                        免费申请H200算力，开机即用，助您领先一步！
+                        <span class="alternate-font">free </span>
+                    </h2>
+                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                        <a
+                            href="#"
+                            class="default-btn pull-right action_button lg-button"
+                            >立即申请</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="message-shadow"></div>
+        </section>
+        <!--message-wrap ends-->
+        <section class="content">
+            <div class="container">
+                <div class="inner-page homepage margin-bottom-none">
+                    <section class="row car-block-wrap padding-bottom-40">
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-bottom-none"
+                        >
+                            <div class="flip margin-bottom-30">
+                                <div class="">
+                                    <div class="face front">
+                                        <img
+                                            class="img-responsive"
+                                            src="images/car1.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <h4><a href="#">人工智能训练</a></h4>
+                            <p class="margin-bottom-none">
+                                随着对话式 AI、自然语言处理 (NLP) 和推荐系统的
+                                AI
+                                模型规模和复杂性不断增长，训练时间也大幅增加，导致生产率下降和成本上升。NVIDIA
+                                GPU 和完整的解决方案堆栈可显著加速您的 AI
+                                训练，从而加快模型探索速度、大幅节省成本并缩短投资回报时间。
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-bottom-none"
+                        >
+                            <div class="flip horizontal margin-bottom-30">
+                                <div class="">
+                                    <div class="face front">
+                                        <img
+                                            class="img-responsive"
+                                            src="images/car2.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>
+                                <a href="#">人工智能推理</a>
+                            </h4>
+                            <p class="margin-bottom-none">
+                                在产品和服务中部署经过训练的 AI
+                                模型，并保证服务质量
+                                (QoS)，需要高性能和多功能的加速器。NVIDIA 的 AI
+                                推理平台支持所有 AI
+                                工作负载并提供最佳推理解决方案 -
+                                结合最高吞吐量、最佳效率和最佳灵活性，为最终用户提供
+                                AI 驱动的体验。
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-bottom-none"
+                        >
+                            <div class="flip margin-bottom-30">
+                                <div class="">
+                                    <div class="face front">
+                                        <img
+                                            class="img-responsive"
+                                            src="images/car3.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <h4><a href="#">高性能计算</a></h4>
+                            <p class="margin-bottom-none">
+                                HPC 与 AI
+                                和机器学习相结合，推动了计算科学的发展，为突破性科学发现铺平了道路。NVIDIA
+                                GPU
+                                可加速从天气预报和能源勘探到计算流体动力学和生命科学等广泛行业和领域的大规模
+                                HPC 应用。
+                            </p>
+                        </div>
+                    </section>
+
+                    <!--car-block-wrap ends-->
+                    <div
+                        class="row parallax_parent design_2 margin-bottom-40 margin-top-30"
+                    >
+                        <div
+                            class="parallax_scroll clearfix"
+                            data-velocity="-.5"
+                            data-offset="-200"
+                            data-image="images/parallax1.jpg"
+                        >
+                            <div class="overlay">
+                                <div class="container">
+                                    <div class="row">
+                                        <div
+                                            class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-left-none xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft"
+                                        >
+                                            <span class="align-center"
+                                                ><i
+                                                    class="fa fa-6x fa-bar-chart-o"
+                                                ></i
+                                            ></span>
+                                            <h3>Results Driven</h3>
+                                            <p>
+                                                Sed ut perspiciatis unde om nis
+                                                natus error sit volup atem
+                                                accusant dolorem que laudantium.
+                                                Totam aperiam, eaque ipsa quae
+                                                ai.
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="col-lg-3 col-md-6 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft"
+                                            data-wow-delay=".2s"
+                                        >
+                                            <span class="align-center"
+                                                ><i class="fa fa-6x fa-road"></i
+                                            ></span>
+                                            <h3>Proven Technology</h3>
+                                            <p>
+                                                Sed ut perspiciatis unde om nis
+                                                natus error sit volup atem
+                                                accusant dolorem que laudantium.
+                                                Totam aperiam, eaque ipsa quae
+                                                ai.
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="col-lg-3 col-md-6 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInRight"
+                                            data-wow-delay=".2s"
+                                        >
+                                            <span class="align-center"
+                                                ><i
+                                                    class="fa fa-6x fa-flag-checkered"
+                                                ></i
+                                            ></span>
+                                            <h3>Winning Culture</h3>
+                                            <p>
+                                                Sed ut perspiciatis unde om nis
+                                                natus error sit volup atem
+                                                accusant dolorem que laudantium.
+                                                Totam aperiam, eaque ipsa quae
+                                                ai.
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="col-lg-3 col-md-6 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 padding-right-none scroll_effect bounceInRight"
+                                        >
+                                            <span class="align-center"
+                                                ><i
+                                                    class="fa fa-6x fa-dashboard"
+                                                ></i
+                                            ></span>
+                                            <h3>Top Performance</h3>
+                                            <p>
+                                                Sed ut perspiciatis unde om nis
+                                                natus error sit volup atem
+                                                accusant dolorem que laudantium.
+                                                Totam aperiam, eaque ipsa quae
+                                                ai.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--car-info-wrap ends-->
+                    <section
+                        class="welcome-wrap padding-top-30 sm-horizontal-15"
+                    >
+                        <div class="row">
+                            <div
+                                class="col-lg-6 col-md-12 col-sm-12 col-xs-12 welcome padding-left-none padding-bottom-40 scroll_effect fadeInUp"
+                            >
+                                <h4 class="margin-bottom-25 margin-top-none">
+                                    我们的 <strong>优势</strong> 
+                                </h4>
+                                <p>
+                                    在当今快速发展的数字时代，我们深知可靠的服务器基础设施对您的业务成功至关重要。作为行业领先的服务器解决方案提供商，我们以卓越的产品质量和个性化服务为傲。我们严选全球顶级品牌，确保每台服务器都达到最高性能标准，同时提供量身定制的配置，以满足您独特的业务需求。我们的专业团队致力于深入理解您的业务挑战，为您提供最优化的解决方案。
+                                </p>
+                                <p>
+                                    我们的优势不仅体现在产品和服务上，更延伸到您业务的方方面面。凭借与制造商的直接合作关系，我们为您带来极具竞争力的价格和灵活的付款方案。我们高效的物流网络和专业的安装团队确保您的服务器能够快速部署并投入使用。
+                                </p>
+                            </div>
+                            <!--welcome ends-->
+                            <div
+                                class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-bottom-40 scroll_effect fadeInUp"
+                                data-wow-delay=".2s"
+                                style="z-index: 100"
+                            >
+                                <h4 class="margin-bottom-25 margin-top-none">
+                                    <strong>Benchmarks</strong> PyTorch Training
+                                    GPU
+                                </h4>
+                                <div
+                                    class="search-form margin-top-20 padding-vertical-20"
+                                >
+                                    <form method="post" action="#">
+                                        <div
+                                            class="select-wrapper row clearfix"
+                                        >
+                                            <div class="col-md-6">
+                                                <div
+                                                    class="my-dropdown make-dropdown"
+                                                >
+                                                    <div
+                                                        style="
+                                                            text-indent: 0.2em;
+                                                        "
+                                                    >
+                                                        Visualization
+                                                    </div>
+                                                    <select
+                                                        name="body_style"
+                                                        class="css-dropdowns"
+                                                        tabindex="1"
+                                                    >
+                                                        <option value="">
+                                                            chart
+                                                        </option>
+                                                        <option>table</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div
+                                                    class="my-dropdown make-dropdown"
+                                                >
+                                                    <div
+                                                        style="
+                                                            text-indent: 0.2em;
+                                                        "
+                                                    >
+                                                        Metric
+                                                    </div>
+                                                    <select
+                                                        name="body_style"
+                                                        class="css-dropdowns"
+                                                        tabindex="1"
+                                                    >
+                                                        <option value="">
+                                                            throughput
+                                                        </option>
+                                                        <option>
+                                                            batch size
+                                                        </option>
+                                                        <option>
+                                                            throughput/watt
+                                                        </option>
+                                                        <option>
+                                                            batch size/watt
+                                                        </option>
+                                                        <option>
+                                                            throughput/$
+                                                        </option>
+                                                        <option>
+                                                            batch size/$
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="select-wrapper row clearfix"
+                                        >
+                                            <div class="col-md-6">
+                                                <div
+                                                    class="my-dropdown make-dropdown"
+                                                >
+                                                    <div
+                                                        style="
+                                                            text-indent: 0.2em;
+                                                        "
+                                                    >
+                                                        Precision
+                                                    </div>
+                                                    <select
+                                                        name="model"
+                                                        class="css-dropdowns"
+                                                        tabindex="1"
+                                                    >
+                                                        <option value="">
+                                                            fp32
+                                                        </option>
+                                                        <option>fp16</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div
+                                                    class="my-dropdown make-dropdown"
+                                                >
+                                                    <div
+                                                        style="
+                                                            text-indent: 0.2em;
+                                                        "
+                                                    >
+                                                        Number of GPUs
+                                                    </div>
+                                                    <select
+                                                        name="transmission"
+                                                        class="css-dropdowns"
+                                                        tabindex="1"
+                                                    >
+                                                        <option value="">
+                                                            1x
+                                                        </option>
+                                                        <option>2x</option>
+                                                        <option>4x</option>
+                                                        <option>8x</option>
+                                                        <option>
+                                                            All GPUs
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="select-wrapper row clearfix"
+                                        >
+                                            <div class="col-md-6">
+                                                <div
+                                                    class="my-dropdown make-dropdown"
+                                                >
+                                                    <div
+                                                        style="
+                                                            text-indent: 0.2em;
+                                                        "
+                                                    >
+                                                        Model
+                                                    </div>
+                                                    <select
+                                                        name="make"
+                                                        class="css-dropdowns"
+                                                        tabindex="1"
+                                                    >
+                                                        <option value="">
+                                                            All Models
+                                                        </option>
+                                                        <option>ssd</option>
+                                                        <option>
+                                                            resnet50
+                                                        </option>
+                                                        <option>gnmt</option>
+                                                        <option>
+                                                            bert_base_squad
+                                                        </option>
+                                                        <option>
+                                                            bert_large_squad
+                                                        </option>
+                                                        <option>
+                                                            tacotron2
+                                                        </option>
+                                                        <option>
+                                                            waveglow
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div
+                                            class="select-wrapper row clearfix"
+                                            style="justify-content: flex-end"
+                                        >
+                                            <div class="form-element">
+                                                <input
+                                                    type="submit"
+                                                    value="查找最具性价比的GPU"
+                                                    class="find_new_vehicle pull-right md-button"
+                                                />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--invetory ends-->
+                        </div>
+
+                        <!-- Footer Map -->
+                        <div
+                            class="fullwidth_element_parent margin-top-30 padding-bottom-40"
+                        >
+                            <div
+                                id="google-map-listing"
+                                class="fullwidth_element"
+                                data-longitude="-121.98620335916436"
+                                data-latitude="37.380207027712906"
+                                data-zoom="7"
+                                style="height: 390px"
+                                data-scroll="false"
+                                data-style='[{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#F0F0F0"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]'
+                            ></div>
+                        </div>
+                        <div
+                            class="car-rate-block row clearfix margin-top-30 padding-bottom-40"
+                        >
+                            <div
+                                class="col-lg-2 col-md-6 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none padding-left-none scroll_effect bounceInLeft"
+                            >
+                                <div class="small-block clearfix">
+                                    <h4
+                                        class="margin-bottom-25 margin-top-none"
+                                    >
+                                        申请报价
+                                    </h4>
+                                    <a href="#"
+                                        ><span class="align-center"
+                                            ><i
+                                                class="fa fa-tag fa-7x"
+                                            ></i></span
+                                    ></a>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-2 col-md-6 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInLeft"
+                                data-wow-delay=".2s"
+                            >
+                                <div class="small-block clearfix">
+                                    <h4
+                                        class="margin-bottom-25 margin-top-none"
+                                    >
+                                        售后服务
+                                    </h4>
+                                    <a href="#"
+                                        ><span class="align-center"
+                                            ><i
+                                                class="fa fa-cogs fa-7x"
+                                            ></i></span
+                                    ></a>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-4 col-md-12 col-sm-12 col-xs-12 padding-left-none padding-right-none hours_operation"
+                            >
+                                <div class="small-block clearfix">
+                                    <h4
+                                        class="margin-bottom-25 margin-top-none"
+                                    >
+                                        我们的工作时间
+                                    </h4>
+                                    <div class="row">
+                                        <div
+                                            class="col-lg-6 col-md-12 col-sm-12 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-40 md-margin-bottom-none scroll_effect bounceInUp"
+                                            data-wow-delay=".4s"
+                                        >
+                                            <table
+                                                class="table table-bordered no-border font-13px margin-bottom-none"
+                                            >
+                                                <thead>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <strong
+                                                                >Sales
+                                                                Department</strong
+                                                            >
+                                                        </td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Mon:</td>
+                                                        <td>8:00am - 5:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tue:</td>
+                                                        <td>8:00am - 9:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Wed:</td>
+                                                        <td>8:00am - 5:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thu:</td>
+                                                        <td>8:00am - 9:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fri:</td>
+                                                        <td>8:00am - 6:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sat:</td>
+                                                        <td>9:00am - 5:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sun:</td>
+                                                        <td>Closed</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-12 col-sm-12 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInUp"
+                                            data-wow-delay=".4s"
+                                        >
+                                            <table
+                                                class="table table-bordered no-border font-13px margin-bottom-none"
+                                            >
+                                                <thead>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <strong
+                                                                >Service
+                                                                Department</strong
+                                                            >
+                                                        </td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Mon:</td>
+                                                        <td>8:00am - 5:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tue:</td>
+                                                        <td>8:00am - 9:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Wed:</td>
+                                                        <td>8:00am - 5:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thu:</td>
+                                                        <td>8:00am - 9:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Fri:</td>
+                                                        <td>8:00am - 6:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sat:</td>
+                                                        <td>9:00am - 5:00pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sun:</td>
+                                                        <td>Closed</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-2 col-md-6 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInRight"
+                                data-wow-delay=".2s"
+                            >
+                                <div class="small-block clearfix">
+                                    <h4
+                                        class="margin-bottom-25 margin-top-none"
+                                    >
+                                        关于我们
+                                    </h4>
+                                    <a href="about.html"
+
+                                        ><span class="align-center"
+                                            ><i
+                                                class="fa fa-users fa-7x"
+                                            ></i></span
+                                    ></a>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-2 col-md-6 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none padding-right-none scroll_effect bounceInRight"
+                            >
+                                <div class="small-block clearfix">
+                                    <h4
+                                        class="margin-bottom-25 margin-top-none"
+                                    >
+                                        联系我们
+                                    </h4>
+                                    <a href="#"
+                                        ><span class="align-center"
+                                            ><i
+                                                class="fa fa-map-marker fa-7x"
+                                            ></i></span
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--welcome-wrap ends-->
+
+                    <div class="row parallax_parent margin-top-30">
+                        <div
+                            class="parallax_scroll clearfix"
+                            data-velocity="-.5"
+                            data-offset="-300"
+                            data-no-repeat="true"
+                            data-image="images/parallax2.jpg"
+                        >
+                            <div class="overlay">
+                                <div class="container">
+                                    <div class="row padding-top-60 padding-bottom-60">
+                                        <div
+                                            class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-left-none"
+                                        >
+                                            <img src="./images/info/research-center.png" alt="">
+
+                                            <span
+                                                class="animate_number margin-vertical-15"
+                                            >
+                                                <span class="number"
+                                                    >9</span
+                                                >
+                                            </span>
+
+                                            研究中心
+                                        </div>
+
+                                        <div
+                                            class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                                        >
+                                            <!-- <i class="fa fa-money"></i> -->
+
+                                            <img src="./images/info/supply-center.png" alt="">
+
+                                            <span
+                                                class="animate_number margin-vertical-15"
+                                            >
+                                                <span class="number"
+                                                    >6</span
+                                                >
+                                            </span>
+
+                                            供应中心
+                                        </div>
+
+                                        <div
+                                            class="col-lg-3 col-md-6 col-sm-6 col-xs-12"
+                                        >
+                                            <!-- <i class="fa fa-users"></i> -->
+                                            <img src="./images/info/maintenance.png" alt="">
+
+                                            <span
+                                                class="animate_number margin-vertical-15"
+                                            >
+                                                <span class="number">6</span>
+                                            </span>
+
+                                            全球技术服务中心
+                                        </div>
+
+                                        <div
+                                            class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-right-none"
+                                        >
+                                            <!-- <i class="fa fa-tint"></i> -->
+                                            <img src="./images/info/area.png" alt="">
+
+                                            <span
+                                                class="animate_number margin-vertical-15"
+                                            >
+                                                <span class="number"
+                                                    >7</span
+                                                >
+                                            </span>
+
+                                            地区部
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer Start-->
+        <footer class="design_2">
+            <div class="container">
+                <div class="row between">
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding-left-none md-padding-left-none sm-padding-left-15 xs-padding-left-15"
+                    >
+                        <h4>通讯</h4>
+                        <p>
+                            通过订阅我们的公司，您将始终了解我们最新的GPU和服务器库存！
+                        </p>
+                        <form method="post" action="#" class="form_contact">
+                            <input
+                                type="text"
+                                value=""
+                                name="MERGE0"
+                                placeholder="你的邮箱"
+                            />
+                            <div class="md-button">订阅</div>
+                            <!-- <input
+                                type="submit"
+                                value="订阅"
+                                class="md-button"
+                            /> -->
+                            <input type="hidden" name="u" value="" />
+                            <input type="hidden" name="id" value="" />
+                        </form>
+                    </div>
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding-right-none md-padding-right-none sm-padding-right-15 xs-padding-right-15"
+                    >
+                        <h4>联系我们</h4>
+                        <div class="footer-contact">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <strong>通讯地址:</strong> 3350 Scott Blvd
+                                    Bldg#6601 Santa Clara, CA 95054 USA
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <strong>联系电话:</strong>(+1) 9495249795
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope-o"></i>
+                                    <strong>邮箱:</strong
+                                    ><a href="#">molly@neuxserver.com</a>
+                                </li>
+                            </ul>
+
+                            <i class="fa fa-location-arrow back_icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="clearfix"></div>
+        <section class="copyright-wrap padding-bottom-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div
+                            class="logo-footer margin-bottom-20 md-margin-bottom-20 sm-margin-bottom-10 xs-margin-bottom-20"
+                        >
+                            <a href="#">
+                                <h1>neuxserver</h1>
+                                <!-- <span>template</span> -->
+                                </a
+                            >
+                        </div>
+                        <p>
+                            Copyright &copy; 2024 Theme Suite. All rights
+                            reserved.
+                        </p>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
+                        <ul
+                            class="social margin-bottom-25 md-margin-bottom-25 sm-margin-bottom-20 xs-margin-bottom-20 xs-padding-top-10 clearfix"
+                        >
+                            <li><a class="sc-1" href="#"></a></li>
+                            <li><a class="sc-2" href="#"></a></li>
+                            <li><a class="sc-3" href="#"></a></li>
+                            <li><a class="sc-6" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="back_to_top">
+            <img src="images/arrow-up.png" alt="scroll up" />
+        </div>
+        <!-- Bootstrap core JavaScript -->
+        <script src="js/retina.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script src="js/jquery.bxslider.js" type="text/javascript"></script>
+        <script
+            src="js/jquery.selectbox-0.2.js"
+            type="text/javascript"
+        ></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.js"></script>
+               <!-- 加上下面这几行代码 即可翻译几十种语言 -->
+               <script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+               <script>
+                    
+                   // 不出现的select的选择语言
+                   translate.selectLanguageTag.show = false;
+                //     translate.language.setLocal("english"); // 设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
+                   translate.service.use("client.edge"); // 设置机器翻译服务通道，直接客户端本身，不依赖服务端 。相关说明参考 http://translate.zvo.cn/43086.html
+                   translate.execute(); // 进行翻译
+               </script>
+    </body>
+</html>

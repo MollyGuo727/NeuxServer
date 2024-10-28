@@ -1,0 +1,600 @@
+<!doctype html>
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.ico">
+<title class="ignore">Neuxserver</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Yellowtail%7COpen%20Sans%3A400%2C300%2C600%2C700%2C800" media="screen" />
+<!-- Custom styles for this template -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />
+<link href="css/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jquery.selectbox.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/mobile.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/ts.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+
+<!-- Twitter Feed Scripts
+     Uncomment to activate
+
+<script type="text/javascript" src="js/twitter/jquery.tweet.js"></script>
+<script type="text/javascript" src="js/twitter/twitter_feed.js"></script> -->
+
+</head>
+
+<body>
+<!--Header Start-->
+<header data-spy="affix" data-offset-top="1" class="clearfix">
+    <section class="toolbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 left_ba">
+                    <ul
+                        class="left-none navbar-nav top-nav"
+                        style="flex-direction: row"
+                    >
+                        <!-- <li>
+                            <a href="#"
+                                ><i class="fa fa-user"></i> Login</a
+                            >
+                        </li> -->
+                        <li class="dropdown">
+                            <a
+                                href="#"
+                                class="dropdown-toggle"
+                                data-toggle="dropdown"
+                                ><i class="fa fa-globe"></i> 多语言</a
+                            >
+                            <ul class="dropdown-menu ignore">
+                                <li>
+                                    <a
+                                        href="javascript:translate.changeLanguage('chinese_simplified');"
+                                        >简体中文</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="javascript:translate.changeLanguage('english');"
+                                        >English</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="javascript:translate.changeLanguage('russian');"
+                                        >Русский</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="javascript:translate.changeLanguage('japanese');"
+                                        >日本語</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li>
+                            <i class="fa fa-search"></i>
+                            <input
+                                type="search"
+                                placeholder="Search"
+                                class="search_box"
+                            />
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="right-none pull-right company_info">
+                        <li>
+                            <a href="tel:18005670123"
+                                ><i class="fa fa-phone"></i> (+1)
+                                9495249795</a
+                            >
+                        </li>
+                        <!-- <li>
+                            <a href="tel:18005670123"
+                                ><i class="fa fa-email"></i>
+                                molly@neuxserver.com</a
+                            >
+                        </li> -->
+                        <li class="address">
+                            <a href="contact.html"
+                                ><i class="fa fa-map-marker"></i> 3350
+                                Scott Blvd Bldg#6601 Santa Clara, CA
+                                95054 USA</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar_shadow"></div>
+    </section>
+    <div class="bottom-header">
+        <div class="container">
+            <nav
+                class="navbar navbar-expand-md navbar-default"
+                role="navigation"
+            >
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbar-collapse-mobile"
+                            aria-controls="navbar-collapse-mobile"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <a class="navbar-brand ignore" href="index.html"
+                            ><span class="logo"
+                                ><span class="primary_text"
+                                    >neuxserver</span
+                                >
+                                <!-- <span class="secondary_text"
+                                    >Template</span
+                                ></span> -->
+                            </a
+                        >
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div
+                        class="desktop-menu-dropdown collapse navbar-collapse"
+                        id="navbar-collapse-desktop"
+                    >
+                        <ul class="nav navbar-nav pull-right">
+                            <li>
+                                <a href="index.html">首页</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="inventory-2-listing-comparison.html"
+                                    >产品</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="portfolio-2-column-details.html"
+                                    >解决方案</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="service.html"
+                                    >合作伙伴</a>
+                            </li>
+                            <li class="active">
+                                <a href="faq.html"
+                                    >关于 neuxserver</a
+                                >
+                            </li>
+                            <li>
+                                <a href="portfolio-single-project-wide.html">客户服务</a>
+                            </li>
+                            <li>
+                                <a
+                                            class="ignore"
+                                            href="benchmarks.html"
+                                            >benchmark</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="mobile-menu-dropdown collapse navbar-collapse"
+                        id="navbar-collapse-mobile"
+                    >
+                        <ul class="nav navbar-nav pull-right">
+                            <li>
+                                <a href="index.html">首页</a>
+                            </li>
+                            <li>
+                                <a
+                                href="inventory-2-listing-comparison.html"
+                                    >产品</b
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                href="portfolio-2-column-details.html"
+                                    >解决方案</b
+                                ></a>
+                            </li>
+                            <li><a href="service.html">合作伙伴</a></li>
+                            <li class="active">
+                                <a href="faq.html">关于neuxserver</a>
+                            </li>
+                            <li>
+                                <a
+                                href="portfolio-single-project-wide.html"
+                                    >客户服务 </b
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                            class="ignore"
+                                            href="benchmarks.html"
+                                            >benchmark</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="header_shadow"></div>
+    </div>
+</header>
+<!--Header End-->
+
+<div class="clearfix"></div>
+<section id="secondary-banner" class="dynamic-image-6"><!--for other images just change the class name of this section block like, class="dynamic-image-2" and add css for the changed class-->
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <h2>关于 Neuxserver</h2>
+                <h4>Frequently Asked Questions</h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <ul class="breadcrumb">
+                    <li><a href="#">首页</a></li>
+                    <li>关于 Neuxserver</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--secondary-banner ends-->
+<div class="message-shadow"></div>
+<div class="clearfix"></div>
+<section class="content faq">
+    <div class="container">
+        <div class="inner-page">
+            <div class="row">
+                <!--FAQ LEFT-->
+                <div class="col-md-9 xs-padding-bottom-40">
+                    <div class="accodian_panel margin-top-30">
+                        <div class="panel-group description-accordion faq-sort margin-bottom-none" id="accordion">
+
+                            <!--description-->
+                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Electrical,Navigational,Wiring">
+                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                    <h4 class="panel-title padding-left-30"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="">关于 Neuxserver</a> </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse in" style="height: auto;">
+                                    <div class="panel-body">
+                                        <!--Panel_body-->
+                                        <div class="faq_post padding-left-40">
+                                            <div class="post-entry clearfix margin-top-10">
+                                                <p>Neuxserver 是一家独立的高性能计算品牌，致力于为全球客户提供先进的服务器技术、液冷散热解决方案、算力调度平台及行业定制化解决方案。作为行业先锋，我们专注于通过创新科技，帮助客户优化计算环境，实现更高效的运营和可持续发展。</p>
+                                            </div>
+                                        </div>
+                                        <!--Panel_body-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--description-->
+
+                            <!--description-->
+                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Engine,Sunroof,Wiring">
+                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                    <h4 class="panel-title padding-left-30"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">核心业务</a> </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" style="height: auto;">
+                                    <div class="panel-body">
+                                        <!--Panel_body-->
+                                        <div class="faq_post padding-left-40">
+                                            <div class="post-entry clearfix margin-top-10">
+                                                <p>
+                                                    <p><strong>高性能服务器解决方案</strong></p>
+                                                    <p> 提供从标准机架式服务器到液冷服务器和AI算力服务器的全方位产品，满足不同行业的多样化需求，确保高密度计算场景下的卓越表现。</p>
+                                                    <p><strong> 领先的液冷技术</strong></p>
+                                                    <p>neuxserver 提供基于液冷技术的散热解决方案，显著提升数据中心的能效，减少能源消耗，同时延长服务器的使用寿命，适合绿色计算和高效能部署。</p>
+                                                    <p><strong>AI调度与智能计算系统</strong></p>
+                                                    <p>专为AI和大规模数据处理设计的调度系统，智能优化任务分配，提高计算资源利用率，广泛应用于金融、科研、人工智能等高负载计算领域。</p>
+                                                    <p><strong>行业定制化解决方案</strong></p>
+                                                    <p>我们根据客户需求，量身打造适合金融、运营商、教育、人工智能等行业的定制解决方案，确保系统的高效运行和安全管理。</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!--Panel_body-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--description-->
+
+                            <!-- description-->
+                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Electrical,Mechanical,Wiring">
+                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                    <h4 class="panel-title padding-left-30"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">我们的优势</a> </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" style="height: 0;">
+                                    <div class="panel-body">
+                                        <!--Panel_body-->
+                                        <div class="faq_post padding-left-40">
+                                            <div class="post-entry clearfix margin-top-10">
+                                                <p>
+                                                    <p><strong>独立自主创新</strong></p>
+                                                    <p>neuxserver 作为独立品牌，拥有自主研发的技术平台，能够灵活应对市场需求变化，快速推出创新解决方案。</p>
+                                                    <p><strong>全球领先的液冷技术</strong></p>
+                                                    <p>我们的液冷服务器和液冷数据中心方案大幅降低能耗，优化散热效率，是企业实现绿色计算的理想选择。</p>
+                                                    <p><strong>高效的智能调度平台</strong></p>
+                                                    <p>我们的AI调度软件专为应对大规模任务而设计，通过智能化资源调配，帮助企业提升计算效率，特别适用于金融量化交易和人工智能研发。</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!--Panel_body-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--description-->
+
+                            <!--description-->
+                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Mechanical,Sunroof,Navigational">
+                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                    <h4 class="panel-title padding-left-30"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsefour" class="collapsed">成功案例</a> </h4>
+                                </div>
+                                <div id="collapsefour" class="panel-collapse collapse" style="height: 0;">
+                                    <div class="panel-body">
+                                        <!--Panel_body-->
+                                        <div class="faq_post padding-left-40">
+                                            <div class="post-entry clearfix margin-top-10">
+                                                <p>
+                                                    <p><strong>量化金融交易解决方案</strong></p>
+                                                    <p>为某大型金融机构提供了基于液冷服务器的量化交易平台，优化了交易速度和实时数据分析能力。</p>
+                                                    <p><strong>教育科研云平台</strong></p>
+                                                    <p>为高校打造了智能化的科研云平台，提供高性能计算支持，同时通过液冷技术提升整体能效，满足科研计算需求。</p>
+                                                    <p><strong>AI算力云平台</strong></p>
+                                                    <p>帮助AI企业快速部署弹性算力云，支持大规模模型训练，优化资源调度，降低计算成本。</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!--Panel_body-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--description-->
+
+                            <!--description-->
+                            <div class="panel panel-default padding-top-20 padding-bottom-15" data-categories="Navigational,Stereo,Sunroof">
+                                <div class="panel-heading padding-vertical-10 padding-horizontal-15">
+                                    <h4 class="panel-title padding-left-30"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsefive" class="collapsed">我们的愿景</a> </h4>
+                                </div>
+                                <div id="collapsefive" class="panel-collapse collapse" style="height: 0;">
+                                    <div class="panel-body">
+                                        <!--Panel_body-->
+                                        <div class="faq_post padding-left-40">
+                                            <div class="post-entry clearfix margin-top-10"> <img src="images/faq-img1.jpg" alt="" class="alignleft">
+                                                <p>作为高性能计算行业的先锋，neuxserver 致力于通过持续创新，推动计算领域的可持续发展。我们以领先的液冷技术和高性能计算解决方案，帮助客户提升业务效率、实现智能化运营和绿色发展。 </p>
+                                            </div>
+                                        </div>
+                                        <!--Panel_body-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--description-->
+                        </div>
+                    </div>
+                </div>
+                <!--FAQ LEFT-->
+                <!--FAQ LEFT-->
+                <!-- <div class="col-md-3 xs-margin-top-30">
+                    <div class="right_faq">
+                        <div class="side-widget side-content">
+                            <form class="search-box padding-bottom-50" role="search">
+                                <h3>SEARCH</h3>
+                                <div class="form-group">
+                                    <input type="search" class="form-control" placeholder="Search for...">
+                                </div>
+                                <input type="submit" value="Search" class="margin-top-10 margin-bottom-none md-button">
+                            </form>
+                            <div class="recent_posts_container padding-bottom-50">
+                                <h3 class="recent_posts">RECENT POSTS</h3>
+                                <div class="side-blog"><img src="images/blog-thumb-1.jpg" class="alignleft" alt=""> <strong>Most recent post</strong>
+                                    <p>Lorem ipsum dolor sit amet, id melius accusam mea ...</p>
+                                </div>
+                                <div class="side-blog"><img src="images/blog-thumb-2.jpg" class="alignleft" alt=""> <strong>Second most recent post</strong>
+                                    <p>Oblique copiosae dissentiunt ea vim, ius ea ...</p>
+                                </div>
+                                <div class="side-blog"><img src="images/blog-thumb-3.jpg" class="alignleft" alt=""> <strong>Third most recent post</strong>
+                                    <p>Eos ad errem virtute convenire, ex sea hinc ...</p>
+                                </div>
+                                <div class="side-blog"><img src="images/blog-thumb-4.jpg" class="alignleft" alt=""> <strong>Fourth most recent post</strong>
+                                    <p>Ea vis gloriatur efficiantur intellegebat, id ...</p>
+                                </div>
+                                <div class="side-blog"><img src="images/blog-thumb-5.jpg" class="alignleft" alt=""> <strong>Fifth most recent post</strong>
+                                    <p>Sea ea semper eripuit inermis, nec ut elit ...</p>
+                                </div>
+                            </div>
+                            <div class="list testimonial_div padding-bottom-50 xs-padding-bottom-none">
+                                <h3>TESTIMONIALS</h3>
+                                <div class="testimonial">
+                                    <ul class="testimonial_slider">
+                                        <li>
+                                            <blockquote class="style1"><span>Happiness does not come from
+                                                doing easy work but from the
+                                                afterglow of satisfaction that
+                                                comes after the achievement of
+                                                a difficult task that demanded
+                                                our best.</span> <strong>Theodore Isaac Rubin</strong> </blockquote>
+                                        </li>
+                                        <li>
+                                            <blockquote class="style1"><span>Happiness does not come from
+                                                doing easy work but from the
+                                                afterglow of satisfaction that
+                                                comes after the achievement of
+                                                a difficult task that demanded
+                                                our best.</span> <strong>Theodore Isaac Rubin</strong> </blockquote>
+                                        </li>
+                                        <li>
+                                            <blockquote class="style1"><span>Happiness does not come from
+                                                doing easy work but from the
+                                                afterglow of satisfaction that
+                                                comes after the achievement of
+                                                a difficult task that demanded
+                                                our best.</span> <strong>Theodore Isaac Rubin</strong> </blockquote>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!--FAQ RIGHT-->
+
+    </div>
+    <!--container ends-->
+</section>
+<!--content ends-->
+
+<!--Footer Start-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <h4>About us</h4>
+                <img src="images/ceo.jpg" alt="">
+                <p>Sed ut perspiciatis unde om
+                    nis iste natus error sit volup
+                    atem accusantium dolor
+                    que laudantium. Totam reillo inventore veritatis et quasi architecto
+                    beatae vitae dicta sunt explicabo. Nemo en
+                    im ipsam voluptatem quia voluptas sit asper
+                    natur aut odit aut fugit. </p>
+                <a href="#"><em>Harold Ford, President / CEO</em></a> </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <h4>Contact us</h4>
+                <div class="footer-contact">
+                    <ul>
+                        <li><strong><i class="fa fa-phone"></i>Phone:</strong><span>1-800-123-4567</span></li>
+                        <li><strong><i class="fa fa-map-marker"></i>Address:</strong><span>Company Name<br>
+                            1234 Street Name<br>
+                            City Name, AB  12345<br>
+                            United States</span></li>
+                        <li><strong><i class="fa fa-envelope-o"></i>Email:</strong><span><a href="#">sales@company.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <h4>Latest tweets</h4>
+                <div class="latest-tweet">
+                    <div><i class="fa fa-twitter"></i>
+                        <p>Put your tweet message here.  Make it
+                            compelling to attract other <a href="#">@people</a> to
+                            read and click on your <a href="#">http://links</a> to
+                            your site. <a href="#">#hashtag</a></p>
+                    </div>
+                    <div><i class="fa fa-twitter"></i>
+                        <p>Put your tweet message here.  Make it
+                            compelling to attract other <a href="#">@people</a> to
+                            read and click on your <a href="#">http://links</a> to
+                            your site. <a href="#">#hashtag</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <h4>newsletter</h4>
+                <p>By subscribing to our company newsletter
+                    you will always be up-to-date on our latest
+                    promotions, deals and vehicle inventory!</p>
+                <form method="post" action="#" class="form_contact">
+                    <input type="text" value="" name="MERGE0" placeholder="Email Address">
+                    <input type="submit" value="Subscribe" class="md-button">
+                    <input type="hidden" name="u" value="">
+                    <input type="hidden" name="id" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="clearfix"></div>
+<section class="copyright-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="logo-footer margin-bottom-40 md-margin-bottom-40 sm-margin-bottom-10 xs-margin-bottom-20"><a href="#">
+                    <h1>Automotive</h1>
+                    <span>template</span></a>
+                </div>
+                <p>Copyright &copy; 2021 Theme Suite. All rights reserved.</p>
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
+                <ul class="social margin-bottom-25 md-margin-bottom-25 sm-margin-bottom-20 xs-margin-bottom-20 xs-padding-top-10 clearfix">
+                    <li><a class="sc-1" href="#"></a></li>
+                    <li><a class="sc-2" href="#"></a></li>
+                    <li><a class="sc-3" href="#"></a></li>
+                    <li><a class="sc-4" href="#"></a></li>
+                    <li><a class="sc-5" href="#"></a></li>
+                    <li><a class="sc-6" href="#"></a></li>
+                    <li><a class="sc-7" href="#"></a></li>
+                    <li><a class="sc-8" href="#"></a></li>
+                    <li><a class="sc-9" href="#"></a></li>
+                    <li><a class="sc-10" href="#"></a></li>
+                </ul>
+                <ul class="f-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="demo.html">Inventory</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="our-team.html">Our Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="back_to_top"> <img src="images/arrow-up.png" alt="scroll up" /> </div>
+<!-- Bootstrap core JavaScript --> <script src="js/retina.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script src="js/modernizr.custom.js"></script> <script defer src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.bxslider.js" type="text/javascript"></script>
+<script src="js/jquery.selectbox-0.2.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+        <!-- 加上下面这几行代码 即可翻译几十种语言 -->
+        <script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+        <script>
+             
+            // 不出现的select的选择语言
+            translate.selectLanguageTag.show = false;
+             // translate.language.setLocal("english"); // 设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
+            translate.service.use("client.edge"); // 设置机器翻译服务通道，直接客户端本身，不依赖服务端 。相关说明参考 http://translate.zvo.cn/43086.html
+            translate.execute(); // 进行翻译
+        </script>
+</body>
+</html>
