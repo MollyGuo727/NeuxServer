@@ -1,2 +1,2 @@
 # NeuxServer
-NeuxServer web
+[NeuxServer web](https://oneclick.amplifyapp.com/button.svg)
