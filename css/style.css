@@ -1050,10 +1050,10 @@ header.affix
     margin-top: 0;
     text-shadow: 0 1px 0 #000;
     padding-top: 150px;
+    padding-bottom: 15px;
     color: #fff;
-    height: 302px;
     border-bottom: solid 2px #fff;
-    background-position: center 0;
+    background-position: 100% 100%;
 }
 
 .boxed_layout #secondary-banner {
@@ -6172,6 +6172,9 @@ div img.carfax {
 .featured-service .featured:hover h5 {
     color: #fff;
 }
+.featured-service .featured:hover .iconfont {
+    color: #fff;
+}
 
 .featured-service .featured h5,
 .detail-service .details h5 {
@@ -6188,6 +6191,18 @@ div img.carfax {
 
 .featured-service .featured img {
     padding: 11px 0;
+}
+.featured-service .featured .iconfont {
+    display: inline-block;
+    font-size: 68px;
+    color: #2d2d2d;
+    vertical-align: middle;
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 38px 0;
 }
 
 .featured-service .featured p,
@@ -6246,18 +6261,24 @@ div img.carfax {
 }
 
 .detail-service .details h5 {
+    display: flex;
+    align-items: center;
     padding-bottom: 2px;
 }
 
-.detail-service .details h5:before {
+.detail-service .details h5 .iconfont {
     font-size: 34px;
-    font-family: FontAwesome;
     color: #76b900;
     vertical-align: middle;
     margin-right: 15px;
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.detail-service .details h5.customize:before {
+/* .detail-service .details h5.customize:before {
     content: "\f0ad";
 }
 
@@ -6279,7 +6300,7 @@ div img.carfax {
 
 .detail-service .details h5.flexible:before {
     content: "\f013";
-}
+} */
 
 /*  J. Our Team
 ----------------------------*/

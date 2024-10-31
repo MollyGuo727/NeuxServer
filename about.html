@@ -47,6 +47,18 @@
 <script type="text/javascript" src="js/twitter/twitter_feed.js"></script> -->
 
 </head>
+<style>
+    /* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'iconfont';  /* Project id 4720955 */
+  src: url('fonts/iconfont/font_4720955_99hi73ggv3h.woff2') format('woff2'),
+       url('fonts/iconfont/font_4720955_99hi73ggv3h.woff') format('woff'),
+       url('fonts/iconfont/font_4720955_99hi73ggv3h.ttf') format('truetype');
+}
+.iconfont{
+    
+}
+</style>
 
 <body>
 <!--Header Start-->
@@ -294,8 +306,19 @@
                     </div>
                 </div>
             </div>
+            <style>
+                .featured h5{
+                    word-break: break-all;
+                }
+                .stretch{
+                    align-items: stretch;
+                }
+                .featured{
+                    height: 100%;
+                }
+            </style>
             <div class="featured-service clearfix padding-bottom-40 margin-top-30">
-                <div class="row">
+                <div class="row stretch">
                   <div class="col-lg-12">
                     <h2 class="margin-top-none"><strong>核心业务</strong></h2>
                   </div>
@@ -304,21 +327,24 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-bottom-none scroll_effect fadeInUp">
                         <div class="featured">
                             <h5>高性能服务器解决方案</h5>
-                            <img src="images/android-icon.png" alt="" data-hoverimg="images/android-icon-hover.png">
+                            <!-- <img src="images/android-icon.png" alt="" data-hoverimg="images/android-icon-hover.png"> -->
+                            <i class="iconfont">&#xe651;</i>
                             <p>提供从标准机架式服务器到液冷服务器和AI算力服务器的全方位产品，满足不同行业的多样化需求，确保高密度计算场景下的卓越表现。</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-bottom-none scroll_effect fadeInUp" data-wow-delay=".2s">
                         <div class="featured">
                             <h5>领先的液冷技术</h5>
-                            <img src="images/icon-windows-8.png" alt="" data-hoverimg="images/icon-windows-8-hover.png">
+                            <!-- <img src="images/icon-windows-8.png" alt="" data-hoverimg="images/icon-windows-8-hover.png"> -->
+                            <i class="iconfont">&#xe616;</i>
                             <p>neuxserver提供基于液冷技术的散热解决方案，显著提升数据中心能效，减少能源消耗，同时延长服务器使用寿命，适合绿色计算和高效能部署。</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-bottom-none scroll_effect fadeInUp" data-wow-delay=".4s">
                         <div class="featured">
                             <h5>AI调度与智能计算系统</h5>
-                            <img src="images/twitter-icon.png" alt="" data-hoverimg="images/twitter-icon-hover.png">
+                            <!-- <img src="images/twitter-icon.png" alt="" data-hoverimg="images/twitter-icon-hover.png"> -->
+                            <i class="iconfont">&#xe67b;</i>
                             <p>专为AI和大规模数据处理设计的调度系统，智能优化任务分配，提高计算资源利用率，广泛应用于金融、科研、人工智能等高负载计算领域。
                                 </p>
                         </div>
@@ -326,7 +352,8 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-bottom-none scroll_effect fadeInUp" data-wow-delay=".6s">
                         <div class="featured">
                             <h5>行业定制化解决方案</h5>
-                            <img src="images/you-tube.png" alt="" data-hoverimg="images/you-tube-hover.png">
+                            <!-- <img src="images/you-tube.png" alt="" data-hoverimg="images/you-tube-hover.png"> -->
+                            <i class="iconfont">&#xe6ff;</i>
                             <p>我们根据客户需求，量身打造适合金
                                 融、运营商、教育、人工智能等行业
                                 的定制解决方案，确保系统的高效运
@@ -427,37 +454,43 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 scroll_effect fadeInLeft">
                         <div class="details margin-top-25">
-                            <h5 class="customize">经久耐用</h5>
+                            <h5 class="customize">
+                                <i class="iconfont">&#xe65e;</i><span>经久耐用</span></h5>
                             <p class="padding-top-10">当用于高负载操作时，计算硬件很快就会过热，通常在不到一年的时间内就会死机。我们的解决方案通过高性能冷却系统，确保在持续高负荷下长期稳定运行。</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 scroll_effect fadeInUp">
                         <div class="details margin-top-25">
-                            <h5 class="awards">安静无声</h5>
+                            <h5 class="awards">
+                                <i class="iconfont">&#xe6b7;</i><span>安静无声</span></h5>
                             <p class="padding-top-10">典型的风冷工作站和服务器非常嘈杂，特别是在满负荷运行时。Neuxserver服务器比类似规格的风冷系统至少安静两倍。</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 scroll_effect fadeInRight">
                         <div class="details margin-top-25">
-                            <h5 class="music">维护便捷</h5>
+                            <h5 class="music">
+                                <i class="iconfont">&#xe602;</i><span>维护便捷</span></h5>
                             <p class="padding-top-10">Neuxserver建造时考虑到易于维护，更换CPU或GPU就像在风冷系统中一样容易，而不需要消耗系统的能量。</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 scroll_effect fadeInLeft" data-wow-delay=".2s">
                         <div class="details margin-top-25">
-                            <h5 class="work">专业售后</h5>
+                            <h5 class="work">
+                                <i class="iconfont">&#xe606;</i><span>专业售后</span></h5>
                             <p class="padding-top-10 margin-bottom-none">我们提供24小时在线客户支持，并为设备提供长达3年的保修。</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 scroll_effect fadeInUp" data-wow-delay=".2s">
                         <div class="details margin-top-25">
-                            <h5 class="ultra">运行稳定</h5>
+                            <h5 class="ultra">
+                                <i class="iconfont">&#xe68f;</i><span>运行稳定</span></h5>
                             <p class="padding-top-10 margin-bottom-none">由于Neuxserver系统中使用的数据中心级液体冷却系统，它们可以在较温暖的气候下全天候满负荷运行。</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 scroll_effect fadeInRight" data-wow-delay=".2s">
                         <div class="details margin-top-25">
-                            <h5 class="flexible">使用便捷</h5>
+                            <h5 class="flexible">
+                                <i class="iconfont">&#xe682;</i><span>使用便捷</span></h5>
                             <p class="padding-top-10 margin-bottom-none">我们提供全套解决方案：只需插上电源，就可以使用了。我们的设备是根据您的需求配置的，所以您不必担心。</p>
                         </div>
                     </div>
@@ -473,13 +506,13 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        flex: 0 0 18%;
+                        flex: 0 0 16%;
                         width: 20%;
                         height: 130px;
                         border: 1px solid #eee;
+                        padding: 2%;
                     }
                     .hz-images img{
-                        /* height: 100%; */
                     }
                 </style>
             <div class="row">
@@ -489,7 +522,7 @@
                         <div class="arrow2" id="slideControls"><span class="prev-btn"></span><span class="next-btn"></span></div>
                         <div class="flex">
                             <div class="jquery scroll_effect fadeInUp hz-images">
-                                <img src="images/hz/1.jpeg" alt="">
+                                <img src="images/hz/1.jpg" alt="">
                             </div>
                             <div class="jquery scroll_effect fadeInUp hz-images">
                                 <img src="images/hz/2.jpeg" alt="">
@@ -498,10 +531,13 @@
                                 <img src="images/hz/3.png" alt="">
                             </div>
                             <div class="jquery scroll_effect fadeInUp hz-images">
-                                <img src="images/hz/4.gif" alt="">
+                                <img src="images/hz/4.jpg" alt="">
                             </div>
                             <div class="jquery scroll_effect fadeInUp hz-images">
                                 <img src="images/hz/5.gif" alt="">
+                            </div>
+                            <div class="jquery scroll_effect fadeInUp hz-images">
+                                <img src="images/hz/6.webp" alt="">
                             </div>
                         </div>
                     </div>
