@@ -29,7 +29,8 @@
 				markers: mapMarkers,
 				latitude: initLatitude,
 				longitude: initLongitude,
-				zoom: 15
+				zoom: 15,
+				gestureHandling: 'cooperative'
 			};
 
 			var map = $("#googlemaps").gMap(mapSettings);

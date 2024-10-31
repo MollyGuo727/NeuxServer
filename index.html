@@ -14,7 +14,9 @@
         <meta name="description" content="neuxserver" />
         <meta name="author" content="" />
         <link rel="shortcut icon" href="images/favicon.ico" />
-        <title class="ignore">Neuxserver</title>
+        <title class="ignore">
+            Neuxserver
+        </title>
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet" />
 
@@ -64,10 +66,6 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/wow.min.js"></script>
-        <script
-            type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs8HBjo7MfaxkIZophfl63DP_U0qxJOrE"
-        ></script>
 
         <script
             type="text/javascript"
@@ -150,25 +148,25 @@
                                     <ul class="dropdown-menu ignore">
                                         <li>
                                             <a
-                                                href="javascript:translate.changeLanguage('chinese_simplified');"
+                                                href="javascript:translate.changeLanguage('chinese_simplified');changeLanguage('zh-CN');"
                                                 >简体中文</a
                                             >
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:translate.changeLanguage('english');"
+                                                href="javascript:translate.changeLanguage('english');changeLanguage('en');"
                                                 >English</a
                                             >
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:translate.changeLanguage('russian');"
+                                                href="javascript:translate.changeLanguage('russian');changeLanguage('ru');"
                                                 >Русский</a
                                             >
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:translate.changeLanguage('japanese');"
+                                                href="javascript:translate.changeLanguage('japanese');changeLanguage('ja');"
                                                 >日本語</a
                                             >
                                         </li>
@@ -255,26 +253,26 @@
                                     </li>
                                     <li>
                                         <a
-                                            href="inventory-2-listing-comparison.html"
+                                            href="product.html"
                                             >产品</a>
                                     </li>
                                     <li>
                                         <a
-                                            href="portfolio-2-column-details.html"
+                                            href="solution.html"
                                             >解决方案</a>
                                     </li>
                                     <li>
                                         <a
-                                            href="service.html"
+                                            href="about.html"
                                             >关于 neuxserver</a>
                                     </li>
                                     <!-- <li>
-                                        <a href="faq.html"
+                                        <a href="service.html"
                                             >关于 neuxserver</a
                                         >
                                     </li> -->
                                     <li>
-                                        <a href="faq.html">客户服务</a>
+                                        <a href="service.html">客户服务</a>
                                     </li>
                                     <li>
                                         <a
@@ -295,23 +293,23 @@
                                 </li>
                                 <li>
                                     <a
-                                    href="inventory-2-listing-comparison.html"
+                                    href="product.html"
                                         >产品</b
                                     ></a>
                                 </li>
                                 <li>
                                     <a
-                                    href="portfolio-2-column-details.html"
+                                    href="solution.html"
                                         >解决方案</b
                                     ></a>
                                 </li>
-                                <li><a href="service.html">关于 neuxserver</a></li>
+                                <li><a href="about.html">关于 neuxserver</a></li>
                                 <!-- <li>
-                                    <a href="faq.html">关于neuxserver</a>
+                                    <a href="service.html">关于neuxserver</a>
                                 </li> -->
                                 <li>
                                     <a
-                                    href="faq.html"
+                                    href="service.html"
                                         >客户服务 </b
                                     ></a>
                                 </li>
@@ -386,7 +384,7 @@
                             <!-- SLIDE  -->
                             <li data-transition="fade">
                                 <!-- MAIN IMAGE -->
-                                <img src="images/slide-show2.jpg" alt="" />
+                                <img src="images/slide-show2.png" alt="" />
 
                                 <!-- LAYER NR. 1 -->
                                 <div
@@ -401,7 +399,21 @@
                                     data-splitout="none"
                                     style="z-index: 6; letter-spacing: -3px"
                                 >
-                                    智算未来，驱动无限可能
+                                    智算未来
+                                </div>
+                                <div
+                                    class="tp-caption move mediumlarge_light_white_center"
+                                    data-x="600"
+                                    data-y="300"
+                                    data-speed="500"
+                                    data-start="800"
+                                    data-transform_in="x:right;s:2000;e:Power4.easeInOut;"
+                                    data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                    data-splitin="none"
+                                    data-splitout="none"
+                                    style="z-index: 6; letter-spacing: -3px"
+                                >
+                                    驱动无限可能
                                 </div>
                             </li>
 
@@ -450,7 +462,7 @@
                                 <div
                                     class="tp-caption thin_red fade"
                                     data-x="450"
-                                    data-y="244"
+                                    data-y="294"
                                     data-speed="500"
                                     data-start="800"
                                     data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
@@ -464,7 +476,7 @@
                             <!-- SLIDE  -->
                             <li data-transition="fade">
                                 <!-- MAIN IMAGE -->
-                                <img src="images/slide-show5.jpg" alt="" />
+                                <img src="images/slide-show5.png" alt="" />
 
                                 <!-- LAYERS -->
                                 <div
@@ -912,11 +924,14 @@
                                             style="justify-content: flex-end"
                                         >
                                             <div class="form-element">
-                                                <input
+                                                <div class="md-button">
+                                                    <a href="benchmarks.html">查找最具性价比的GPU</a>
+                                                </div>
+                                                <!-- <input
                                                     type="submit"
                                                     value="查找最具性价比的GPU"
                                                     class="find_new_vehicle pull-right md-button"
-                                                />
+                                                /> -->
                                             </div>
                                         </div>
                                     </form>
@@ -926,7 +941,7 @@
                         </div>
 
                         <!-- Footer Map -->
-                        <!-- <div
+                        <div
                             class="fullwidth_element_parent margin-top-30 padding-bottom-40"
                         >
                             <div
@@ -936,12 +951,10 @@
                                 data-latitude="37.380207027712906"
                                 data-zoom="7"
                                 style="height: 390px"
-                                data-scroll="false"
-                                data-style='[{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#F0F0F0"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]'
                             ></div>
-                            <img class="fullwidth_element" src="images/2-nolevel.png" alt="">
-                            <img class="fullwidth_element" src="images/1-level.png" alt="">
-                        </div> -->
+                            <!-- <img class="fullwidth_element" src="images/2-nolevel.png" alt="">
+                            <img class="fullwidth_element" src="images/1-level.png" alt=""> -->
+                        </div>
                         <div
                             class="car-rate-block row clearfix margin-top-30 padding-bottom-40"
                         >
@@ -1310,6 +1323,17 @@
         </div>
         <!-- Bootstrap core JavaScript -->
         <script src="js/retina.js"></script>
+        <script
+            type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz5VLCot1bC5XfatnuFneBE4fPZn9htdU"
+            defer
+        ></script>
+        <!-- <script
+            type="text/javascript"
+            src="http://maps.google.cn/maps/api/js?sensor=false&key=AIzaSyDs8HBjo7MfaxkIZophfl63DP_U0qxJOrE"
+            defer
+        ></script> -->
+        <!-- http://maps.google.cn/maps/api/js?sensor=false -->
         <script type="text/javascript" src="js/jquery.parallax.js"></script>
         <script type="text/javascript" src="js/jquery.inview.min.js"></script>
         <script src="js/main.js"></script>
@@ -1325,13 +1349,6 @@
         <script type="text/javascript" src="js/jquery.easing.js"></script>
                <!-- 加上下面这几行代码 即可翻译几十种语言 -->
                <script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
-               <script>
-                    
-                   // 不出现的select的选择语言
-                   translate.selectLanguageTag.show = false;
-                //     translate.language.setLocal("english"); // 设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
-                   translate.service.use("client.edge"); // 设置机器翻译服务通道，直接客户端本身，不依赖服务端 。相关说明参考 http://translate.zvo.cn/43086.html
-                   translate.execute(); // 进行翻译
-               </script>
+               <script src="js/translate.js"></script>
     </body>
 </html>

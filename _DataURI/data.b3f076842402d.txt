@@ -1,0 +1,1 @@
+chrome-extension://ljjemllljcmogpfapbkkighbhhppjdbg/dist/detector.js

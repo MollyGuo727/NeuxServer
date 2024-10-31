@@ -1977,6 +1977,17 @@ input[type="submit"].md-button {
     border-radius: 4px;
     display: inline-block;
     cursor: pointer;
+    color: #fff;
+}
+
+.md-button a,
+.default-btn.md-button a,
+.btn-inventory.md-button a,
+button.md-button a,
+input[type="reset"].md-button a,
+input[type="button"].md-button a,
+input[type="submit"].md-button a {
+    color: #fff;
 }
 
 .lg-button,

@@ -1,0 +1,2 @@
+function getUrlVars(){var vars={};window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,(function(m,key,value){vars[key]=value}));return vars}
+//# sourceURL=https://cdn2.hubspot.net/hub/21998649/hub_generated/template_assets/88707359007/1716921814703/LambdaLabs/static/js/benchmarks/tools.js

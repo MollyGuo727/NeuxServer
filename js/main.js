@@ -229,15 +229,17 @@ jQuery(document).ready( function($){
 	if ($(".check-more").length) {
 		$(".check-more").each(function() {
 			$(this).click(function() {
-				var $table = $(this).parent().parent().children(".table-responsive");
+				var $table = $(this).parent().parent().parent();
 
-				if($(this).text().indexOf("收起") !== -1) {
-					$table.css("height", "700px");
-					$(this).text("查看更多");
+				if($(this).hasClass("p-collapse")) {
+					$table.css("height", "1000px");
+					$(this).removeClass("p-collapse").text("查看更多");
 				} else {
 					$table.css("height", "auto");
-					$(this).text("收起");
+					$(this).addClass("p-collapse").text("收起");
 				}
+
+				translate.execute();
 			})
 		})
 	}
@@ -748,96 +750,161 @@ jQuery(document).ready( function($){
 
 });
 
+var map;
+var currentLanguage = '';
+
 // have to wait until DOM is fully loaded (images too)
 $(window).load(function(){
+	// $('#myTab a').click(function (e) {
+	// 	e.preventDefault();
+	// 	$(this).tab('show');
+
+	// 	var index = $(this).parent().index();
+
+	// 	if(index == 3){
+	// 		setTimeout( function(){
+	// 			init_google_map();
+	// 		}, 500);
+	// 	}
+	// });
+	if ($("#google-map-listing").length) {
+		const toRe = {
+			'chinese_simplified': 'zh-CN',
+			'english': 'en',
+			'russian': 'ru',
+			'japanese': 'ja'
+		}
+	
+		const lang = toRe[localStorage.getItem('to')]
+		changeLanguage(lang || 'zh-CN')
+	}
+});
+
+// google map
+function init_google_map(){
+		var latitude     = $("#google-map-listing").data('latitude');
+		var longitude    = $("#google-map-listing").data('longitude');
+		var zoom         = $("#google-map-listing").data('zoom');
+		var scroll_wheel = $("#google-map-listing").data('scroll');
+		var style        = $("#google-map-listing").data('style');
+		var parallax     = $("#google-map-listing").data('parallax');
+
+		if(latitude && longitude){
+			var myLatlng = new google.maps.LatLng(latitude, longitude);
+			var myOptions = {
+				zoom: zoom,
+				center: myLatlng,
+				popup: true,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				gestureHandling: 'cooperative'
+			}
+
+			// if(parallax != false && typeof parallax == "undefined"){
+			// 	myOptions.scroll = {
+			// 		x:$(window).scrollLeft(),
+			// 		y:$(window).scrollTop()
+			// 	}
+			// }
+
+			if(scroll_wheel == false && typeof scroll_wheel != "undefined"){
+				myOptions.scrollwheel = false;
+			}
+
+			if(typeof style != "undefined"){
+				myOptions.styles = style;
+			}
+
+			map = new google.maps.Map(document.getElementById("google-map-listing"), myOptions);
+
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: "Our Location"
+			});
+
+			if(parallax != false && typeof parallax == "undefined"){
+				var offset = $("#google-map-listing").offset();
+				// map.panBy(((myOptions.scroll.x-offset.left)/3),((myOptions.scroll.y-offset.top)/3));
+
+				google.maps.event.addDomListener(window, 'scroll', function(){
+					var scrollY = $(window).scrollTop(),
+						scrollX = $(window).scrollLeft(),
+						scroll  = map.get('scroll');
+
+					// if(scroll){
+					// 	map.panBy(-((scroll.x-scrollX)/3),-((scroll.y-scrollY)/3));
+					// }
+
+					map.set('scroll',{
+						x:scrollX,
+						y:scrollY
+					});
+				});
+			}
+
+			google.maps.event.addListener(marker, 'click', function() {
+				map.setZoom(zoom);
+			});
+		}
+}
+
+// 清理地图实例
+function clearMap() {
+	if (map && map.setMap) {
+		// 保存当前状态
+		const currentState = {
+			center: map.getCenter(),
+			zoom: map.getZoom()
+		};
+		
+		// 清除地图
+		map.setMap(null);
+		map = null;
+		
+		return currentState;
+	}
+	return null;
+}
 
 
-	$('#myTab a').click(function (e) {
-		e.preventDefault();
-		$(this).tab('show');
+// 切换语言
+function changeLanguage(lang) {
+	console.log(lang)
+	console.log(currentLanguage)
+	if (currentLanguage === lang) return;
 
-		var index = $(this).parent().index();
+	const previousState = clearMap();
+	currentLanguage = lang
 
-		if(index == 3){
-			setTimeout( function(){
-				init_google_map();
-			}, 500);
+	const scripts = document.getElementsByTagName('script');
+	let retinaSct;
+
+	Array.from(scripts).forEach(script => {
+		if (script.src.includes('maps.googleapis.com')) {
+			script.remove();
+		}
+
+		if (script.src.includes('retina.js')){
+			retinaSct = script
 		}
 	});
 
+	// 清除可能存在的 Google Maps 相关的全局变量
+	delete window?.google;
 
-	// google map
-	function init_google_map(){
-
-		if($("#google-map-listing").length){
-			var latitude     = $("#google-map-listing").data('latitude');
-			var longitude    = $("#google-map-listing").data('longitude');
-			var zoom         = $("#google-map-listing").data('zoom');
-			var scroll_wheel = $("#google-map-listing").data('scroll');
-			var style        = $("#google-map-listing").data('style');
-			var parallax     = $("#google-map-listing").data('parallax');
-
-			if(latitude && longitude){
-				var myLatlng = new google.maps.LatLng(latitude, longitude);
-				var myOptions = {
-					zoom: zoom,
-					center: myLatlng,
-					popup: true,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				}
-
-				if(parallax != false && typeof parallax == "undefined"){
-					myOptions.scroll = {
-						x:$(window).scrollLeft(),
-						y:$(window).scrollTop()
-					}
-				}
-
-				if(scroll_wheel == false && typeof scroll_wheel != "undefined"){
-					myOptions.scrollwheel = false;
-				}
-
-				if(typeof style != "undefined"){
-					myOptions.styles = style;
-				}
-
-				var map = new google.maps.Map(document.getElementById("google-map-listing"), myOptions);
-
-				var marker = new google.maps.Marker({
-					position: myLatlng,
-					map: map,
-					title: "Our Location"
-				});
-
-				if(parallax != false && typeof parallax == "undefined"){
-					var offset = $("#google-map-listing").offset();
-				    map.panBy(((myOptions.scroll.x-offset.left)/3),((myOptions.scroll.y-offset.top)/3));
-
-				    google.maps.event.addDomListener(window, 'scroll', function(){
-					    var scrollY = $(window).scrollTop(),
-					        scrollX = $(window).scrollLeft(),
-					        scroll  = map.get('scroll');
-
-					    if(scroll){
-							map.panBy(-((scroll.x-scrollX)/3),-((scroll.y-scrollY)/3));
-					    }
-
-					    map.set('scroll',{
-					    	x:scrollX,
-					    	y:scrollY
-					    });
-					});
-				}
-
-				google.maps.event.addListener(marker, 'click', function() {
-					map.setZoom(zoom);
-				});
-			}
-		}
-	}
-
-	init_google_map();
-});
+	// 加载新的地图脚本
+	const script = document.createElement('script');
+	script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDz5VLCot1bC5XfatnuFneBE4fPZn9htdU&language=${lang}`;
+	// script.async = true;
+	script.defer = true;
+	
+	// 添加加载完成事件监听
+	script.addEventListener('load', function() {
+		init_google_map();
+	});
+	
+	retinaSct.parentNode.insertBefore(script, retinaSct.nextSibling);
+}
 
 function rev_iframe(){
 	jQuery('.tp-banner').revolution().revnext();
