@@ -1,8 +1,8 @@
 /**
-                     * 设置多语言间的不翻译词
-                     * @param {string[]} languages - 支持的语言数组
-                     * @param {string[]} noTranslateWords - 不需要翻译的词数组
-                     */
+ * 设置多语言间的不翻译词
+ * @param {string[]} languages - 支持的语言数组
+ * @param {string[]} noTranslateWords - 不需要翻译的词数组
+ */
 function setupNoTranslateWords(languages, noTranslateWords) {
     // 遍历所有可能的语言对组合
     for (let i = 0; i < languages.length; i++) {
@@ -32,3 +32,8 @@ translate.selectLanguageTag.show = false;
 translate.service.use("client.edge"); // 设置机器翻译服务通道，直接客户端本身，不依赖服务端 。相关说明参考 http://translate.zvo.cn/43086.html
 
 translate.execute(); // 进行翻译
+
+translate.listener.renderTaskFinish = function(task){
+    document.body.style.opacity = 1;
+    document.body.style.visibility = 'visible';
+}

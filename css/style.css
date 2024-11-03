@@ -77,6 +77,8 @@ body {
     line-height: 24px;
     color: #2d2d2d;
     overflow-x: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
 a {
@@ -1054,6 +1056,7 @@ header.affix
     color: #fff;
     border-bottom: solid 2px #fff;
     background-position: 100% 100%;
+    background-size: cover;
 }
 
 .boxed_layout #secondary-banner {

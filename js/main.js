@@ -1,4 +1,16 @@
+function hidePage() {
+	document.body.style.opacity = 0;
+	document.body.style.visibility = 'hidden';
+}
+
 jQuery(document).ready( function($){
+	const to = localStorage.getItem('to')
+
+	if (!to || to === 'chinese_simplified') {
+		document.body.style.opacity = 1;
+		document.body.style.visibility = 'visible';
+	}
+
 	$.fn.evenElements = function() {
 		var heights  = [];
 
