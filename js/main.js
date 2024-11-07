@@ -4,13 +4,6 @@ function hidePage() {
 }
 
 jQuery(document).ready( function($){
-	const to = localStorage.getItem('to')
-
-	if (!to || to === 'chinese_simplified') {
-		document.body.style.opacity = 1;
-		document.body.style.visibility = 'visible';
-	}
-
 	$.fn.evenElements = function() {
 		var heights  = [];
 
@@ -907,7 +900,7 @@ function changeLanguage(lang) {
 	// 加载新的地图脚本
 	const script = document.createElement('script');
 	script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDz5VLCot1bC5XfatnuFneBE4fPZn9htdU&language=${lang}`;
-	// script.async = true;
+	script.async = true;
 	script.defer = true;
 	
 	// 添加加载完成事件监听
