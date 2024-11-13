@@ -1,8 +1,8 @@
 
 			// Map Markers
 			var mapMarkers = [{
-				address: "3350 Scott Blvd Bldg#6601 Santa Clara, CA 95054 USA",
-				html: "<strong>3350 Scott Blvd Bldg#6601 Santa Clara</strong><br> CA 95054 USA",
+				address: "Unit 02, 9/F., The Broadway, No. 54-62 Lockhart Road, Wanchai, Hong Kong",
+				html: "<strong>Unit 02, 9/F., The Broadway, No. 54-62 Lockhart Road, Wanchai, Hong Kong",
 				icon: {
 					image: "images/pin.png",
 					iconsize: [26, 46],

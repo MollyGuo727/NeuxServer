@@ -31,6 +31,8 @@ translate.selectLanguageTag.show = false;
 // translate.language.setLocal("english"); // 设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
 translate.service.use("client.edge"); // 设置机器翻译服务通道，直接客户端本身，不依赖服务端 。相关说明参考 http://translate.zvo.cn/43086.html
 
+translate.language.setDefaultTo('russian');
+
 translate.execute(); // 进行翻译
 
 translate.listener.renderTaskFinish = function(task){
