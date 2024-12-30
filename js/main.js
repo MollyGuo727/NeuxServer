@@ -781,7 +781,7 @@ $(window).load(function(){
 		}
 	
 		const lang = toRe[localStorage.getItem('to')]
-		changeLanguage(lang || 'ru')
+		changeLanguage(lang || 'en')
 	}
 });
 
