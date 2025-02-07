@@ -1,8 +1,8 @@
 
 			// Map Markers
 			var mapMarkers = [{
-				address: "Unit 02, 9/F., The Broadway, No. 54-62 Lockhart Road, Wanchai, Hong Kong",
-				html: "<strong>Unit 02, 9/F., The Broadway, No. 54-62 Lockhart Road, Wanchai, Hong Kong",
+				address: "14616 NW Rich Ct, Portland, Oregon 97229",
+				html: "<strong>14616 NW Rich Ct, Portland, Oregon 97229",
 				icon: {
 					image: "images/pin.png",
 					iconsize: [26, 46],
@@ -12,8 +12,8 @@
 			}];
 
 			// Map Initial Location
-			var initLatitude = 37.380207027712906;
-			var initLongitude = -121.98620335916436;
+			var initLatitude = 45.56756224862487;
+			var initLongitude = -122.82818793009777;
 
 			// Map Extended Settings
 			var mapSettings = {
